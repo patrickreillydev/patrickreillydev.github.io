@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="main.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f48683;
+      }
+
+      .wave {
+        background-image: url("https://daily-drop-dev.myshopify.com/cdn/shop/files/DDC_wave.png?v=1711108268&width=1920");
+        width: 100vw;
+        object-fit: contain;
+        max-height: 110px;
+        min-height: 100px;
+        position: absolute;
+        background-size: cover;
+        z-index: 99;
+        bottom: 0;
+      }
+
+      .a {
+        min-height: 100vh;
+        width: 100vw;
+      }
+
+      #carousel {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        top: 0;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(4, 100vw);
+        align-items: center;
+        -webkit-overflow-scrolling: touch;
+      }
+      #slides {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(4, 100vw);
+      }
+      #slide {
+        position: relative;
+        height: 100vh;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+
+      .box {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .image-banner--content-wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+      }
+
+      #info {
+        position: absolute;
+        bottom: 10em;
+        left: 1em;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+      }
+      .bg-img {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      #prev,
+      #next {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      #prev {
+        left: 1em;
+      }
+      #next {
+        right: 1em;
+      }
+
+      .image-banner--content {
+        text-align: left;
+      }
+
+      @supports (scroll-snap-align: start) {
+        /* modern scroll snap points */
+        .scroll {
+          scroll-snap-type: x mandatory;
+        }
+        .scroll-item-outer {
+          scroll-snap-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="info">
+        <h1>Hi Kyle</h1>
+
+      </div>
+
+   
+       
+  </body>
+</html>
